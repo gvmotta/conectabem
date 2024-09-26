@@ -1,20 +1,16 @@
 import { ReactNode } from 'react';
 
-import { AppProvider } from '@/app/provider';
-
-import '@/styles/globals.css';
+import './globals.css';
 
 export const metadata = {
-  title: 'Bulletproof React',
-  description: 'Showcasing Best Practices For Building React Applications',
+  title: 'ConectaBem',
+  description: 'ConectaBem',
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en">
-      <body>
-        <AppProvider>{children}</AppProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 };
